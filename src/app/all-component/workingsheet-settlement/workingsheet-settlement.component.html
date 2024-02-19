@@ -1,0 +1,564 @@
+<div class="container">
+    <h2 class="settlement">PART - I DETAILS OF PENSIONERS </h2>
+<!-- <form [formGroup]="pensionerDetails">
+    <div class="row">
+        <div class="col-2">
+            <mat-label>PF NO</mat-label>
+            <input id="pfno" class="input form-control"  formControlName="pfno" mat-input>
+        </div>
+        <div class="col">
+            <button class="fetch">fetch data</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Emp Name</mat-label>
+            <input id="empName" class="input form-control" formControlName="empName" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Designation</mat-label>
+            <input id="designation" class="input form-control" formControlName="designation" mat-input>
+        </div>  
+        <div class="col">
+            <mat-label>Last place of working</mat-label>
+            <input id="lastPlaceWorking" class="input form-control" formControlName="lastPlaceWorking" mat-input>
+        </div>  
+        <div class="col">
+            <mat-label>DOB</mat-label>
+            <input id="dob" class="input form-control" formControlName="dob" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>DOA</mat-label>
+            <input id="doa" class="input form-control" formControlName="doa" mat-input>
+        </div>               
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Types of Retirement</mat-label>
+            <input id="retirementType" class="input form-control" [(ngModel)]="selectedType" formControlName="retirementType" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Date of Retirement</mat-label>
+            <input id="retirementDate" class="input form-control" formControlName="retirementDate" mat-input>
+        </div>  
+        <div class="col">
+            <mat-label>Spouse Name</mat-label>
+            <input id="spouseName" class="input form-control" formControlName="spouseName" mat-input>
+        </div>  
+        <div class="col">
+            <mat-label for="spouseDob">DOB of spouse</mat-label>
+            <input id="spouseDob" class="input form-control" formControlName="spouseDob" mat-input>
+        </div>
+        
+        <div class="col">
+            <mat-label>Total availed UEL without MC</mat-label>
+            <input id="totalMc" class="input form-control" formControlName="totalMc" mat-input>
+        </div>               
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Break in Service</mat-label>
+            <input id="serviceBreak" class="input form-control" formControlName="serviceBreak" mat-input>
+            
+        </div>
+        <div class="col">
+            <mat-label>Boy Service</mat-label>
+            <input id="boyServices" class="input form-control" formControlName="boyServices" mat-input>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</form>
+    -->
+   
+    <form [formGroup]="pensionerDetails">
+        <div class="row">
+            <div class="col-2">
+                <mat-label for="pfno">PF NO</mat-label>
+                <input id="pfno" class="input form-control" formControlName="pfno" mat-input>
+            </div>
+            <div class="col">
+                <button class="fetch">fetch data</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label for="empName">Emp Name</mat-label>
+                <input id="empName" class="input form-control" formControlName="empName" mat-input>
+            </div>
+            <div class="col">
+                <mat-label for="designation">Designation</mat-label>
+                <input id="designation" class="input form-control" formControlName="designation" mat-input>
+            </div>  
+            <div class="col">
+                <mat-label for="lastPlaceWorking">Last place of working</mat-label>
+                <input id="lastPlaceWorking" class="input form-control" formControlName="lastPlaceWorking" mat-input>
+            </div>  
+            <div class="col">
+                <mat-label for="dob">DOB</mat-label>
+                <input id="dob" class="input form-control" formControlName="dob" mat-input>
+            </div>
+            <div class="col">
+                <mat-label for="doa">DOA</mat-label>
+                <input id="doa" class="input form-control" formControlName="doa" mat-input>
+            </div>               
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label for="retirementType">Types of Retirement</mat-label>
+                <input id="retirementType" class="input form-control" [(ngModel)]="selectedType" formControlName="retirementType" mat-input>
+            </div>
+            <div class="col">
+                <mat-label for="retirementDate">Date of Retirement</mat-label>
+                <input id="retirementDate" class="input form-control" formControlName="retirementDate" mat-input>
+            </div>  
+            <div class="col">
+                <mat-label for="spouseName">Spouse Name</mat-label>
+                <input id="spouseName" class="input form-control" formControlName="spouseName" mat-input>
+            </div>  
+            <div class="col">
+                <mat-label for="spouseDob">DOB of spouse</mat-label>
+                <input id="spouseDob" class="input form-control" formControlName="spouseDob" mat-input>
+            </div>
+            
+            <div class="col">
+                <mat-label for="totalMc">Total availed UEL without MC</mat-label>
+                <input id="totalMc" class="input form-control" formControlName="totalMc" mat-input>
+            </div>               
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label for="serviceBreak">Break in Service</mat-label>
+                <input id="serviceBreak" class="input form-control" formControlName="serviceBreak" mat-input>
+                
+            </div>
+            <div class="col">
+                <mat-label for="boyServices">Boy Service</mat-label>
+                <input id="boyServices" class="input form-control" formControlName="boyServices" mat-input>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </form>
+ <div *ngIf="selectedType === 'Superannuation'">
+        <h2 class="pensiondetails">PART - II PENSION DETAILS(Superannuation)</h2>
+    <form [formGroup]="pensionDetailsPart1">
+    <div class="row">
+        <div class="col">
+            <mat-label>Opting Commutation</mat-label>
+            <input id="optingCommutation" class="input form-control" formControlName="optingCommutation" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>If YES -- Portion of Commutation</mat-label>
+            <input id="commutationPortion" class="input form-control" formControlName="commutationPortion" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Date of Commutation Commencement</mat-label>
+            <input id="commutationDate" class="input form-control" formControlName="commutationDate" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Gross Qualifying Service</mat-label>
+            <input id="qualifyingService" class="input form-control" formControlName="qualifyingService" mat-input>
+        </div>
+      
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Non Qualifying Service</mat-label>
+            <input id="nonQualifyingService" class="input form-control" formControlName="nonQualifyingService" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Net Qualifying service</mat-label>
+            <input id="netQualifyingService" class="input form-control" formControlName="netQualifyingService" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Half years for pension</mat-label>
+            <input id="halfYearPension" class="input form-control" formControlName="halfYearPension" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Half years for DCRG</mat-label>
+            <input id="halfDcrg" class="input form-control" formControlName="halfDcrg" mat-input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Basic Pay</mat-label>
+            <input id="basicPay" class="input form-control" formControlName="basicPay" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Grade Pay</mat-label>
+            <input id="gradePay" class="input form-control" formControlName="gradePay" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Basic Pension</mat-label>
+            <input id="basicPension" class="input form-control" formControlName="basicPension" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Family Pension (50%)</mat-label>
+            <input id="familyPensionFifty" class="input form-control" formControlName="familyPensionFifty" mat-input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Family Pension (30%)</mat-label>
+            <input id="familyPensionThirty" class="input form-control" formControlName="familyPensionThirty" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>DCRG</mat-label>
+            <input id="dcrg" class="input form-control" formControlName="dcrg" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Commuted Value</mat-label>
+            <input id="commutedValue" class="input form-control" formControlName="commutedValue" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>Commutation</mat-label>
+            <input id="commutation" class="input form-control" formControlName="commutation" mat-input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-label>Residual Pension</mat-label>
+            <input id="residualPension" class="input form-control" formControlName="residualPension" mat-input>
+        </div>
+        <div class="col">
+            <mat-label>PPO No</mat-label>
+            <input id="ppoNo" class="input form-control" formControlName="ppoNo" mat-input>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        
+    </div>
+</form>  
+<div style="display: flex; margin-top: 20px;justify-content: center;">
+    <section><button class="backbutton" routerLink="/pension/workingsheet">BACK</button></section>
+    <section><button class="submit" style="margin-left:10px">submit</button></section>
+</div>
+
+</div>
+
+<div *ngIf="selectedType === 'Compulsory Retirement'">
+    <h2 class="pensiondetails">PART - II PENSION DETAILS (Compulsory Retirement)</h2>
+<form [formGroup]="pensionDetailsPart2">
+<div class="row">
+    <div class="col">
+        <mat-label>Opting Commutation</mat-label>
+        <input id="optingCommutation" class="input form-control" formControlName="optingCommutation" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>If YES -- Portion of Commutation</mat-label>
+        <input id="commutationPortion" class="input form-control" formControlName="commutationPortion" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Date of Commutation Commencement</mat-label>
+        <input id="commutationDate" class="input form-control" formControlName="commutationDate" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Gross Qualifying Service</mat-label>
+        <input id="qualifyingService" class="input form-control" formControlName="qualifyingService" mat-input>
+    </div>
+  
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Non Qualifying Service</mat-label>
+        <input id="nonQualifyingService" class="input form-control" formControlName="nonQualifyingService" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Net Qualifying service</mat-label>
+        <input id="netQualifyingService" class="input form-control" formControlName="netQualifyingService" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Half years for pension</mat-label>
+        <input id="halfYearPension" class="input form-control" formControlName="halfYearPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Half years for DCRG</mat-label>
+        <input id="halfDcrg" class="input form-control" formControlName="halfDcrg" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Basic Pay</mat-label>
+        <input id="basicPay" class="input form-control" formControlName="basicPay" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Grade Pay</mat-label>
+        <input id="gradePay" class="input form-control" formControlName="gradePay" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Basic Pension</mat-label>
+        <input id="basicPension" class="input form-control" formControlName="basicPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Family Pension (50%)</mat-label>
+        <input id="familyPensionFifty" class="input form-control" formControlName="familyPensionFifty" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Family Pension (30%)</mat-label>
+        <input id="familyPensionThirty" class="input form-control" formControlName="familyPensionThirty" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>DCRG</mat-label>
+        <input id="dcrg" class="input form-control" formControlName="dcrg" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Commuted Value</mat-label>
+        <input id="commutedValue" class="input form-control" formControlName="commutedValue" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Commutation</mat-label>
+        <input id="commutation" class="input form-control" formControlName="commutation" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Residual Pension</mat-label>
+        <input id="residualPension" class="input form-control" formControlName="residualPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>PPO No</mat-label>
+        <input id="ppoNo" class="input form-control" formControlName="ppoNo" mat-input>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+    
+</div>
+</form> 
+<div style="display: flex; margin-top: 20px;justify-content: center;">
+    <section><button class="backbutton">BACK</button></section>
+    <section><button class="submit" style="margin-left:10px">submit</button></section>
+</div> 
+
+</div>
+
+
+
+<div *ngIf="selectedType === 'volutary Retirement'">
+    <h2 class="pensiondetails">PART - II PENSION DETAILS (volutary Retirement)</h2>
+<form [formGroup]="pensionDetailsPart3">
+<div class="row">
+    <div class="col">
+        <mat-label>Opting Commutation</mat-label>
+        <input id="optingCommutation" class="input form-control" formControlName="optingCommutation" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>If YES -- Portion of Commutation</mat-label>
+        <input id="commutationPortion" class="input form-control" formControlName="commutationPortion" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Date of Commutation Commencement</mat-label>
+        <input id="commutationDate" class="input form-control" formControlName="commutationDate" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Gross Qualifying Service</mat-label>
+        <input id="qualifyingService" class="input form-control" formControlName="qualifyingService" mat-input>
+    </div>
+  
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Non Qualifying Service</mat-label>
+        <input id="nonQualifyingService" class="input form-control" formControlName="nonQualifyingService" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Net Qualifying service</mat-label>
+        <input id="netQualifyingService" class="input form-control" formControlName="netQualifyingService" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Half years for pension</mat-label>
+        <input id="halfYearPension" class="input form-control" formControlName="halfYearPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Half years for DCRG</mat-label>
+        <input id="halfDcrg" class="input form-control" formControlName="halfDcrg" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Basic Pay</mat-label>
+        <input id="basicPay" class="input form-control" formControlName="basicPay" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Grade Pay</mat-label>
+        <input id="gradePay" class="input form-control" formControlName="gradePay" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Basic Pension</mat-label>
+        <input id="basicPension" class="input form-control" formControlName="basicPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Family Pension (50%)</mat-label>
+        <input id="familyPensionFifty" class="input form-control" formControlName="familyPensionFifty" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Family Pension (30%)</mat-label>
+        <input id="familyPensionThirty" class="input form-control" formControlName="familyPensionThirty" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>DCRG</mat-label>
+        <input id="dcrg" class="input form-control" formControlName="dcrg" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Commuted Value</mat-label>
+        <input id="commutedValue" class="input form-control" formControlName="commutedValue" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>Commutation</mat-label>
+        <input id="commutation" class="input form-control" formControlName="commutation" mat-input>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-label>Residual Pension</mat-label>
+        <input id="residualPension" class="input form-control" formControlName="residualPension" mat-input>
+    </div>
+    <div class="col">
+        <mat-label>PPO No</mat-label>
+        <input id="ppoNo" class="input form-control" formControlName="ppoNo" mat-input>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+    
+</div>
+</form>  
+<div style="display: flex; margin-top: 20px;justify-content: center;">
+    <section><button class="backbutton">BACK</button></section>
+    <section><button class="submit" style="margin-left:10px">submit</button></section>
+</div>
+</div>
+
+
+<div *ngIf="selectedType=== 'Death during service'">
+    <h2 class="deathservice">PART - II PENSION DETAILS (Death during service)</h2>
+    <form [formGroup]="deathForm">
+        <div class="row">
+            <div class="col">
+                <mat-label>Gross Qualifying Service</mat-label>
+                <input id="grossQualifying" class="input form-control" type="text" formControlName="grossQualifying" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Non Qualifying Service</mat-label>
+                <input id="nonqualifyingService" class="input form-control" type="text" formControlName="qualifyingService" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Net Qualifying Service</mat-label>
+                <input id="netQualifyingService" class="input form-control" type="text" formControlName="netQualifyingService" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Half years for DCRG</mat-label>
+                <input id="halfYear" class="input form-control" type="text" formControlName="halfYear" mat-input>
+            </div>
+          
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label>Basic Pay</mat-label>
+                <input id="basicPay" class="input form-control" type="text" formControlName="basicPay" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Grade Pay</mat-label>
+                <input id="gradePay" class="input form-control" type="text" formControlName="gradePay" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Family Pension (50%)
+                </mat-label>
+                <input id="familyPensionFifty" class="input form-control" type="text" formControlName="familyPensionFifty" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Family Pension (30%)
+                </mat-label>
+                <input id="familyPensionThirty" class="input form-control" type="text" formControlName="familyPensionThirty" mat-input>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label>DCRG</mat-label>
+                <input id="dcrg" class="input form-control" type="text" formControlName="dcrg" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>Date of Reduced Pension Commencement
+                </mat-label>
+                <input id="reducedDate" class="input form-control" type="text" formControlName="reducedDate" mat-input>
+            </div>
+            <div class="col">
+                <mat-label>PPO No</mat-label>
+                <input id="ppoNo" class="input form-control" type="text" formControlName="ppoNo" mat-input>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </form>
+    <div style="display: flex; margin-top: 20px;justify-content: center;">
+        <section><button class="backbutton">BACK</button></section>
+        <section><button class="submit" style="margin-left:10px">submit</button></section>
+    </div>
+</div> 
+
+<div *ngIf="selectedType ==='Provisional Pension'">
+    
+    <h2 class="deathservice">PART - II PENSION DETAILS (provisional Pension)</h2>
+    <form [formGroup]="pensionDetailsPart4">
+       <div class="row">
+            <div class="col">
+                <mat-label>Gross Qualifying Service</mat-label>
+                <input  id="grossQualifying" class="input form-control" type="text" formControlName="grossQualifying" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Non Qualifying Service</mat-label>
+                <input  id="nonQualifyingService" class="input form-control" type="text" formControlName="nonQualifyingService" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Net Qualifying Service</mat-label>
+                <input  id="netQualifyingService" class="input form-control" type="text" formControlName="netQualifyingService" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Half years for DCRG</mat-label>
+                <input  id="halfYear" class="input form-control" type="text" formControlName="halfYear" mat-input>
+            </div>      
+            <div class="col">
+                <mat-label>Basic Pay</mat-label>
+                <input  id="basicPay" class="input form-control" type="text" formControlName="basicPay" mat-input>
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col">
+                <mat-label>Grade Pay</mat-label>
+                <input  id="gradePay" class="input form-control" type="text" formControlName="gradePay" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Basic pension</mat-label>
+                <input  id="basicPension" class="input form-control" type="text" formControlName="basicPension" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Family Pension (50%)</mat-label>
+                <input  id="familyPensionFifty" class="input form-control" type="text" formControlName="familyPensionFifty" mat-input>
+            </div>        
+            <div class="col">
+                <mat-label>Family Pension (30%)</mat-label>
+                <input  id="familyPensionThirty" class="input form-control" type="text" formControlName="familyPensionThirty" mat-input>
+            </div>      
+            <div class="col">
+                <mat-label>PPO No</mat-label>
+                <input  id="ppoNo" class="input form-control" type="text" formControlName="ppoNo" mat-input>
+            </div>   
+        </div>
+    </form>
+    <div style="display: flex; margin-top: 20px;justify-content: center;">
+        <section><button class="backbutton">BACK</button></section>
+        <section><button class="submit" style="margin-left:10px">submit</button></section>
+    </div>
+</div>
+
+
+
+</div>
+<main></main>

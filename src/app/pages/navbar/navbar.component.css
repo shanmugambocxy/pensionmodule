@@ -1,0 +1,64 @@
+
+mat-sidenav {
+    background-color:#470A3C;
+    width: 16%;
+    color: #ccc;
+}
+mat-nav-list button{
+  color: white;
+}
+ul{
+  position: absolute;
+  right:0;
+  list-style: none;
+  display: flex;
+  padding: 40PX;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+.searchbox{
+margin: 5px;
+}
+.size{
+  height: 30px;
+  width: 50px;
+}
+.search-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-start; 
+  font-size: 15px;
+  
+}
+.search-input
+{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background-color: #F6F8FA;
+    
+}
+.search-icon  mat-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+.example-toolbar{
+  height: 90px;
+}
+
+.custom-expansion-panel {
+    background-color:#470A3C;
+    color: #ccc;
+}
+.custom-expansion-panel mat-panel-title {
+  color: white;
+}
+
+
