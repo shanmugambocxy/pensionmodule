@@ -15,22 +15,24 @@ import { ArrearScreen2Component } from '../all-component/arrear-screen2/arrear-s
 import { ArrearScreen3Component } from '../all-component/arrear-screen3/arrear-screen3.component';
 
 const routes: Routes = [
-  {path:'',component:NavbarComponent,
-  children:[{path: '', redirectTo: 'pension-list', pathMatch: 'full'},
-            
-            {path:'personaldetails',component:PersonaldetailsComponent},
-            {path:'ongoing-personnel-details',component:OngoingPersonnelDetailsComponent},
-            {path:'workingsheet',component:WorkingsheetComponent},
-            {path:'workingsheet-settlement',component:WorkingsheetSettlementComponent},
-            {path:'payment-monthlypension',component:PaymentMonthlypensionComponent},
-            {path:'payment-settlement',component:PaymentSettlementComponent},
-            {path:'payment-settlement-screen2',component:PaymentSettlementScreen2Component},
-            {path:'payment-settlement-screen3',component:PaymentSettlementScreen3Component},
-            {path:'payment-monthlypension-screen2',component:PaymentMonthlypensionScreen2Component},
-            {path:'arrear-screen1', component : ArrearScreen1Component},
-            {path:'arrear-screen2',component:ArrearScreen2Component},
-            {path:'arrear-screen3',component:ArrearScreen3Component}
-]}
+  {
+    path: '', component: NavbarComponent,
+    children: [{ path: '', redirectTo: 'pension-list', pathMatch: 'full' },
+
+    { path: 'personaldetails', component: PersonaldetailsComponent },
+    { path: 'ongoing-personnel-details/:id', component: OngoingPersonnelDetailsComponent },
+    { path: 'workingsheet', component: WorkingsheetComponent },
+    { path: 'workingsheet-settlement', component: WorkingsheetSettlementComponent },
+    { path: 'payment-monthlypension', component: PaymentMonthlypensionComponent },
+    { path: 'payment-settlement', component: PaymentSettlementComponent },
+    { path: 'payment-settlement-screen2', component: PaymentSettlementScreen2Component },
+    { path: 'payment-settlement-screen3', component: PaymentSettlementScreen3Component },
+    { path: 'payment-monthlypension-screen2', component: PaymentMonthlypensionScreen2Component },
+    { path: 'arrear-screen1', component: ArrearScreen1Component },
+    { path: 'arrear-screen2', component: ArrearScreen2Component },
+    { path: 'arrear-screen3', component: ArrearScreen3Component }
+    ]
+  }
 ];
 
 @NgModule({
